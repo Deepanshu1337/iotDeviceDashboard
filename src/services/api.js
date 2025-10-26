@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const DEMO_DEVICES_URL = "http://68fe47e07c700772bb135bfd.mockapi.io/deviceList"; 
+const DEMO_DEVICES_URL = "https://68fe47e07c700772bb135bfd.mockapi.io/deviceList"; 
 export async function fetchDeviceList() {
   try {
     const res = await axios.get(DEMO_DEVICES_URL, { timeout: 3000 });
