@@ -13,12 +13,9 @@ import { ToastContainer } from "react-toastify";
 export default function App() {
   return (
     <div className="bg-gray-900 min-h-screen text-gray-100">
-      {/* Toaster for toast notifications */}
       <ToastContainer />
       <Routes>
-        {/* Public route */}
         <Route path="/login" element={<Login />} />
-        {/* Protected routes */}
         <Route
           path="/"
           element={
@@ -31,7 +28,6 @@ export default function App() {
           <Route path="thresholds" element={<ThresholdSettings />} />
           <Route path="history" element={<HistoricalData />} />
         </Route>
-        {/* Fallback */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

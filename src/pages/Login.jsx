@@ -36,9 +36,7 @@ export default function Login() {
     const res = login(email.trim(), password);
 
     if (res.ok) {
-      // Save email in sessionStorage
       sessionStorage.setItem("email", email.trim());
-      // You could also save a token if returned: sessionStorage.setItem("token", res.token);
       navigate("/");
     } else {
       setError(res.error || "Login failed");

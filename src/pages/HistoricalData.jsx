@@ -40,7 +40,7 @@ function downloadCSV(filename, rows) {
 export default function HistoricalData() {
   const [devices, setDevices] = useState([]);
   const [selectedDevice, setSelectedDevice] = useState(null);
-  const [range, setRange] = useState("24h"); // options: 24h, 7d, 3m
+  const [range, setRange] = useState("24h"); 
   const [dataCache, setDataCache] = useState({});
 
   useEffect(() => {

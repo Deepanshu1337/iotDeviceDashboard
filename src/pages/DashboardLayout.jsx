@@ -14,9 +14,7 @@ export default function DashboardLayout() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-900 text-gray-200">
-      {/* Header */}
       <header className="flex justify-between items-center bg-gray-800 border-b border-gray-700 px-4 sm:px-6 py-3 sm:py-4 sticky top-0 z-10">
-        {/* Left */}
         <div>
           <h1 className="text-lg sm:text-2xl font-semibold text-blue-400 tracking-tight">
             IoT Dashboard
@@ -27,11 +25,8 @@ export default function DashboardLayout() {
           </p>
         </div>
 
-        {/* Right */}
         <div className="flex items-center gap-2 sm:gap-4">
-          {/* Navigation */}
           <nav className="flex items-center gap-2">
-            {/* Full text + icon on medium+ screens */}
             <div className="hidden sm:flex items-center gap-2">
               <NavLink
                 to="/"
@@ -77,7 +72,6 @@ export default function DashboardLayout() {
               </NavLink>
             </div>
 
-            {/* Only icons on small screens */}
             <div className="flex sm:hidden items-center gap-2">
               <NavLink
                 to="/"
@@ -121,7 +115,6 @@ export default function DashboardLayout() {
             </div>
           </nav>
 
-          {/* Logout */}
           <button
             onClick={doLogout}
             className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 bg-red-600 text-white rounded-lg text-xs sm:text-sm font-medium hover:bg-red-700 active:scale-95 transition-all"
@@ -132,7 +125,6 @@ export default function DashboardLayout() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex-1 p-4 sm:p-6">
         <Outlet />
       </main>
